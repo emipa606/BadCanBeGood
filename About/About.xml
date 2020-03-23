@@ -3,7 +3,8 @@
   <name>Bad Can Be Good</name>
   <author>Neceros</author>
 	<supportedVersions>
-		<li>1.1</li>
+		<li>1.0</li>
+    <li>1.1</li>
 	</supportedVersions>
   <packageId>neceros.badcanbegood</packageId>
   <description>Those bad traits that everyone skips are now not as bad. These traits are now flavorful.</description>
