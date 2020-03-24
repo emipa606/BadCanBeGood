@@ -20,9 +20,12 @@
           <skillGains>
             <li>
               <key>Medicine</key>
-              <value>5</value>
+              <value>3</value>
             </li>
           </skillGains>
+          <statFactors>
+            <MoveSpeed>1.20</MoveSpeed>
+          </statFactors>  
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -77,8 +80,6 @@
         <value>
           <statFactors>
             <EatingSpeed>0.75</EatingSpeed>
-            <PlantHarvestYield>1.25</PlantHarvestYield>
-            <AnimalGatherYield>1.25</AnimalGatherYield>
           </statFactors>  
         </value>
       </li>
@@ -103,7 +104,7 @@
         <value>
           <statFactors>
             <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
-            <GeneralLaborSpeed>1.50</GeneralLaborSpeed>
+            <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
           </statFactors> 
         </value>
       </li>
@@ -245,7 +246,7 @@
         <xpath>/Defs/TraitDef[defName="Beauty"]/degreeDatas/li[label[text()="ugly"]]</xpath>
         <value>
           <statFactors>
-            <GeneralLaborSpeed>1.10</GeneralLaborSpeed>
+            <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
           </statFactors> 
           <disallowedInspirations>
             <li>Inspired_Recruitment</li>
@@ -256,7 +257,7 @@
         <xpath>/Defs/TraitDef[defName="Beauty"]/degreeDatas/li[label[text()="staggeringly ugly"]]</xpath>
         <value>
           <statFactors>
-            <GeneralLaborSpeed>1.20</GeneralLaborSpeed>
+            <WorkSpeedGlobal>1.15</WorkSpeedGlobal>
           </statFactors>
           <disallowedInspirations>
             <li>Inspired_Trade</li>
@@ -277,6 +278,16 @@
       </li>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical interest"]]/marketValueFactorOffset</xpath>
+      </li>
+
+      <!-- Nullify insults to Abrasive -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThoughtDef[defName="Insulted"]</xpath>
+        <value>
+          <nullifyingTraits>
+            <li>Abrasive</li>
+          </nullifyingTraits>
+        </value>
       </li>
     </operations>
   </Operation>
