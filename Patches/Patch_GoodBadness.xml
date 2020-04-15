@@ -31,20 +31,10 @@
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="AnnoyingVoice"]/degreeDatas/li</xpath>
         <value>
-          <skillGains>
-            <li>
-              <key>Crafting</key>
-              <value>3</value>
-            </li>
-            <li>
-              <key>Mining</key>
-              <value>3</value>
-            </li>
-            <li>
-              <key>Construction</key>
-              <value>3</value>
-            </li>
-          </skillGains>
+          <statFactors>
+            <MoveSpeed>1.10</MoveSpeed>
+            <JoyGainFactor>1.50</JoyGainFactor>
+          </statFactors>
         </value>
       </li>
 
@@ -93,9 +83,17 @@
           <skillGains>
             <li>
               <key>Artistic</key>
-              <value>3</value>
+              <value>2</value>
             </li>
-          </skillGains> 
+          </skillGains>
+          <disallowedInspirations>
+            <li>Frenzy_Go</li>
+            <li>Frenzy_Shoot</li>
+            <li>Inspired_Trade</li>
+            <li>Inspired_Recruitment</li>
+            <li>Inspired_Surgery</li>
+            <li>Inspired_Taming</li>
+          </disallowedInspirations>
         </value>
       </li>
 
