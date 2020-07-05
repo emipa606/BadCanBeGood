@@ -74,7 +74,7 @@
         </value>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li/statOffsets</xpath>
+        <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li/hungerRateFactor</xpath>
       </li>
 
       <li Class="PatchOperationAdd">
