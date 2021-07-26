@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Abrasive"]/degreeDatas/li</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Melee</key>
+              <value>3</value>
+            </li>
+          </skillGains>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Wimp"]/degreeDatas/li</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Medicine</key>
+              <value>3</value>
+            </li>
+          </skillGains>
+          <statFactors>
+            <MoveSpeed>1.20</MoveSpeed>
+          </statFactors>  
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="AnnoyingVoice"]/degreeDatas/li</xpath>
+        <value>
+          <statFactors>
+            <MoveSpeed>1.10</MoveSpeed>
+            <JoyGainFactor>1.50</JoyGainFactor>
+          </statFactors>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Jealous"]/degreeDatas/li</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Social</key>
+              <value>3</value>
+            </li>
+          </skillGains>
+          <statFactors>
+            <NegotiationAbility>1.15</NegotiationAbility>
+            <TradePriceImprovement>1.15</TradePriceImprovement>
+          </statFactors>  
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Greedy"]/degreeDatas/li</xpath>
+        <value>
+          <statFactors>
+            <EatingSpeed>1.33</EatingSpeed>
+            <CarryingCapacity>1.50</CarryingCapacity>
+          </statFactors>  
+        </value>
+      </li>
+
+      <!-- Gourmand -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li</xpath>
+        <value>
+          <statFactors>
+            <EatingSpeed>0.75</EatingSpeed>
+          </statFactors>  
+        </value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li/hungerRateFactor</xpath>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Artistic</key>
+              <value>2</value>
+            </li>
+          </skillGains>
+          <disallowedInspirations>
+            <li>Frenzy_Go</li>
+            <li>Frenzy_Shoot</li>
+            <li>Inspired_Trade</li>
+            <li>Inspired_Recruitment</li>
+            <li>Inspired_Surgery</li>
+            <li>Inspired_Taming</li>
+          </disallowedInspirations>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="SlowLearner"]/degreeDatas/li</xpath>
+        <value>
+          <statFactors>
+            <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
+            <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+          </statFactors> 
+        </value>
+      </li>
+
+      <!-- Pyro -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/TraitDef[defName="Pyromaniac"]/degreeDatas/li/randomMentalStateMtbDaysMoodCurve</xpath>
+        <value>
+          <randomMentalStateMtbDaysMoodCurve>
+            <points>
+              <li>(0, 100)</li>
+            </points>
+          </randomMentalStateMtbDaysMoodCurve>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Pyromaniac"]/degreeDatas/li</xpath>
+        <value>
+          <statFactors>
+            <ComfyTemperatureMax>1.15</ComfyTemperatureMax>
+          </statFactors> 
+        </value>
+      </li>
+
+      <!-- DrugDesire -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical fascination"]]</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Medicine</key>
+              <value>3</value>
+            </li>
+            <li>
+              <key>Plants</key>
+              <value>3</value>
+            </li>
+          </skillGains>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical interest"]]</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Medicine</key>
+              <value>1</value>
+            </li>
+            <li>
+              <key>Plants</key>
+              <value>1</value>
+            </li>
+          </skillGains>
+        </value>
+      </li>
+
+      <!-- NaturalMood -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="NaturalMood"]/degreeDatas/li[label[text()="pessimist"]]</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Animals</key>
+              <value>2</value>
+            </li>
+          </skillGains>
+          <statFactors>
+            <TameAnimalChance>1.05</TameAnimalChance>
+            <TrainAnimalChance>1.10</TrainAnimalChance>
+          </statFactors>  
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="NaturalMood"]/degreeDatas/li[label[text()="depressive"]]</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Animals</key>
+              <value>3</value>
+            </li>
+          </skillGains>
+          <statFactors>
+            <TameAnimalChance>1.10</TameAnimalChance>
+            <TrainAnimalChance>1.15</TrainAnimalChance>
+          </statFactors>  
+        </value>
+      </li>
+
+      <!-- Nerves -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="nervous"]]</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Intellectual</key>
+              <value>2</value>
+            </li>    
+          </skillGains>
+          <statFactors>
+            <GlobalLearningFactor>1.10</GlobalLearningFactor>
+          </statFactors> 
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="volatile"]]</xpath>
+        <value>
+          <skillGains>
+            <li>
+              <key>Intellectual</key>
+              <value>3</value>
+            </li>    
+          </skillGains>
+          <statFactors>
+            <GlobalLearningFactor>1.15</GlobalLearningFactor>
+          </statFactors> 
+        </value>
+      </li>
+
+      <!-- Industriousness -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Industriousness"]/degreeDatas/li[label[text()="lazy"]]</xpath>
+        <value>
+          <statFactors>
+            <MentalBreakThreshold>0.90</MentalBreakThreshold>
+          </statFactors> 
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Industriousness"]/degreeDatas/li[label[text()="slothful"]]</xpath>
+        <value>
+          <statFactors>
+            <MentalBreakThreshold>0.80</MentalBreakThreshold>
+          </statFactors> 
+        </value>
+      </li>
+
+      <!-- Beauty -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Beauty"]/degreeDatas/li[label[text()="ugly"]]</xpath>
+        <value>
+          <statFactors>
+            <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
+          </statFactors> 
+          <disallowedInspirations>
+            <li>Inspired_Recruitment</li>
+          </disallowedInspirations>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Beauty"]/degreeDatas/li[label[text()="staggeringly ugly"]]</xpath>
+        <value>
+          <statFactors>
+            <WorkSpeedGlobal>1.15</WorkSpeedGlobal>
+          </statFactors>
+          <disallowedInspirations>
+            <li>Inspired_Trade</li>
+            <li>Inspired_Recruitment</li>
+          </disallowedInspirations>
+        </value>
+      </li>
+
+      <!-- Market Value changes -->
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/TraitDef[defName="Abrasive"]/degreeDatas/li/marketValueFactorOffset</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/TraitDef[defName="Pyromaniac"]/degreeDatas/li/marketValueFactorOffset</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical fascination"]]/marketValueFactorOffset</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical interest"]]/marketValueFactorOffset</xpath>
+      </li>
+
+      <!-- Nullify insults to Abrasive -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThoughtDef[defName="Insulted"]</xpath>
+        <value>
+          <nullifyingTraits>
+            <li>Abrasive</li>
+          </nullifyingTraits>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
