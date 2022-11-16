@@ -1,0 +1,4 @@
+# Changelog for BadCanBeGood
+
+1.4.1 - Updated to 1.4
+

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationAdd">
@@ -25,7 +24,7 @@
           </skillGains>
           <statFactors>
             <MoveSpeed>1.20</MoveSpeed>
-          </statFactors>  
+          </statFactors>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -37,7 +36,6 @@
           </statFactors>
         </value>
       </li>
-
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Jealous"]/degreeDatas/li</xpath>
         <value>
@@ -50,33 +48,30 @@
           <statFactors>
             <NegotiationAbility>1.15</NegotiationAbility>
             <TradePriceImprovement>1.15</TradePriceImprovement>
-          </statFactors>  
+          </statFactors>
         </value>
       </li>
-
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Greedy"]/degreeDatas/li</xpath>
         <value>
           <statFactors>
             <EatingSpeed>1.33</EatingSpeed>
             <CarryingCapacity>1.50</CarryingCapacity>
-          </statFactors>  
+          </statFactors>
         </value>
       </li>
-
       <!-- Gourmand -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li</xpath>
         <value>
           <statFactors>
             <EatingSpeed>0.75</EatingSpeed>
-          </statFactors>  
+          </statFactors>
         </value>
       </li>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li/hungerRateFactor</xpath>
       </li>
-
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li</xpath>
         <value>
@@ -96,17 +91,15 @@
           </disallowedInspirations>
         </value>
       </li>
-
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="SlowLearner"]/degreeDatas/li</xpath>
         <value>
           <statFactors>
             <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
             <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
-          </statFactors> 
+          </statFactors>
         </value>
       </li>
-
       <!-- Pyro -->
       <li Class="PatchOperationReplace">
         <xpath>/Defs/TraitDef[defName="Pyromaniac"]/degreeDatas/li/randomMentalStateMtbDaysMoodCurve</xpath>
@@ -123,10 +116,9 @@
         <value>
           <statFactors>
             <ComfyTemperatureMax>1.15</ComfyTemperatureMax>
-          </statFactors> 
+          </statFactors>
         </value>
       </li>
-
       <!-- DrugDesire -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical fascination"]]</xpath>
@@ -158,7 +150,6 @@
           </skillGains>
         </value>
       </li>
-
       <!-- NaturalMood -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="NaturalMood"]/degreeDatas/li[label[text()="pessimist"]]</xpath>
@@ -172,7 +163,7 @@
           <statFactors>
             <TameAnimalChance>1.05</TameAnimalChance>
             <TrainAnimalChance>1.10</TrainAnimalChance>
-          </statFactors>  
+          </statFactors>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -187,10 +178,9 @@
           <statFactors>
             <TameAnimalChance>1.10</TameAnimalChance>
             <TrainAnimalChance>1.15</TrainAnimalChance>
-          </statFactors>  
+          </statFactors>
         </value>
       </li>
-
       <!-- Nerves -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="nervous"]]</xpath>
@@ -199,11 +189,11 @@
             <li>
               <key>Intellectual</key>
               <value>2</value>
-            </li>    
+            </li>
           </skillGains>
           <statFactors>
             <GlobalLearningFactor>1.10</GlobalLearningFactor>
-          </statFactors> 
+          </statFactors>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -213,21 +203,20 @@
             <li>
               <key>Intellectual</key>
               <value>3</value>
-            </li>    
+            </li>
           </skillGains>
           <statFactors>
             <GlobalLearningFactor>1.15</GlobalLearningFactor>
-          </statFactors> 
+          </statFactors>
         </value>
       </li>
-
       <!-- Industriousness -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Industriousness"]/degreeDatas/li[label[text()="lazy"]]</xpath>
         <value>
           <statFactors>
             <MentalBreakThreshold>0.90</MentalBreakThreshold>
-          </statFactors> 
+          </statFactors>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -235,17 +224,16 @@
         <value>
           <statFactors>
             <MentalBreakThreshold>0.80</MentalBreakThreshold>
-          </statFactors> 
+          </statFactors>
         </value>
       </li>
-
       <!-- Beauty -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Beauty"]/degreeDatas/li[label[text()="ugly"]]</xpath>
         <value>
           <statFactors>
             <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
-          </statFactors> 
+          </statFactors>
           <disallowedInspirations>
             <li>Inspired_Recruitment</li>
           </disallowedInspirations>
@@ -263,7 +251,6 @@
           </disallowedInspirations>
         </value>
       </li>
-
       <!-- Market Value changes -->
       <li Class="PatchOperationRemove">
         <xpath>/Defs/TraitDef[defName="Abrasive"]/degreeDatas/li/marketValueFactorOffset</xpath>
@@ -277,7 +264,6 @@
       <li Class="PatchOperationRemove">
         <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical interest"]]/marketValueFactorOffset</xpath>
       </li>
-
       <!-- Nullify insults to Abrasive -->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThoughtDef[defName="Insulted"]</xpath>
