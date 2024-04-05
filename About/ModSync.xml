@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>92b8e28a-e44c-4ed9-a345-4df295e95a0d</ID>
   <ModName>Bad Can Be Good (Continued)</ModName>
-  <Version>1.4.1</Version>
+  <Version>1.5.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,8 +12,3 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-
-

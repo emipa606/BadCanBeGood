@@ -6,10 +6,7 @@
         <xpath>/Defs/TraitDef[defName="Abrasive"]/degreeDatas/li</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Melee</key>
-              <value>3</value>
-            </li>
+            <Melee>3</Melee>
           </skillGains>
         </value>
       </li>
@@ -17,14 +14,14 @@
         <xpath>/Defs/TraitDef[defName="Wimp"]/degreeDatas/li</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Medicine</key>
-              <value>3</value>
-            </li>
+            <Medicine>3</Medicine>
           </skillGains>
-          <statFactors>
-            <MoveSpeed>1.20</MoveSpeed>
-          </statFactors>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Wimp"]/degreeDatas/li/statFactors</xpath>
+        <value>
+          <MoveSpeed>1.20</MoveSpeed>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -40,10 +37,7 @@
         <xpath>/Defs/TraitDef[defName="Jealous"]/degreeDatas/li</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Social</key>
-              <value>3</value>
-            </li>
+            <Social>3</Social>
           </skillGains>
           <statFactors>
             <NegotiationAbility>1.15</NegotiationAbility>
@@ -76,10 +70,7 @@
         <xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Artistic</key>
-              <value>2</value>
-            </li>
+            <Artistic>2</Artistic>
           </skillGains>
           <disallowedInspirations>
             <li>Frenzy_Go</li>
@@ -92,12 +83,10 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/TraitDef[defName="SlowLearner"]/degreeDatas/li</xpath>
+        <xpath>/Defs/TraitDef[defName="SlowLearner"]/degreeDatas/li/statFactors</xpath>
         <value>
-          <statFactors>
-            <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
-            <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
-          </statFactors>
+          <WorkSpeedGlobal>1.10</WorkSpeedGlobal>
+          <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
         </value>
       </li>
       <!-- Pyro -->
@@ -124,14 +113,8 @@
         <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical fascination"]]</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Medicine</key>
-              <value>3</value>
-            </li>
-            <li>
-              <key>Plants</key>
-              <value>3</value>
-            </li>
+            <Medicine>3</Medicine>
+            <Plants>3</Plants>
           </skillGains>
         </value>
       </li>
@@ -139,14 +122,8 @@
         <xpath>/Defs/TraitDef[defName="DrugDesire"]/degreeDatas/li[label[text()="chemical interest"]]</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Medicine</key>
-              <value>1</value>
-            </li>
-            <li>
-              <key>Plants</key>
-              <value>1</value>
-            </li>
+            <Medicine>1</Medicine>
+            <Plants>1</Plants>
           </skillGains>
         </value>
       </li>
@@ -155,10 +132,7 @@
         <xpath>/Defs/TraitDef[defName="NaturalMood"]/degreeDatas/li[label[text()="pessimist"]]</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Animals</key>
-              <value>2</value>
-            </li>
+            <Animals>2</Animals>
           </skillGains>
           <statFactors>
             <TameAnimalChance>1.05</TameAnimalChance>
@@ -170,10 +144,7 @@
         <xpath>/Defs/TraitDef[defName="NaturalMood"]/degreeDatas/li[label[text()="depressive"]]</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Animals</key>
-              <value>3</value>
-            </li>
+            <Animals>3</Animals>
           </skillGains>
           <statFactors>
             <TameAnimalChance>1.10</TameAnimalChance>
@@ -186,28 +157,28 @@
         <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="nervous"]]</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Intellectual</key>
-              <value>2</value>
-            </li>
+            <Intellectual>2</Intellectual>
           </skillGains>
-          <statFactors>
-            <GlobalLearningFactor>1.10</GlobalLearningFactor>
-          </statFactors>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="volatile"]]</xpath>
         <value>
           <skillGains>
-            <li>
-              <key>Intellectual</key>
-              <value>3</value>
-            </li>
+            <Intellectual>3</Intellectual>
           </skillGains>
-          <statFactors>
-            <GlobalLearningFactor>1.15</GlobalLearningFactor>
-          </statFactors>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="nervous"]]/statFactors</xpath>
+        <value>
+          <GlobalLearningFactor>1.10</GlobalLearningFactor>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label[text()="volatile"]]/statFactors</xpath>
+        <value>
+          <GlobalLearningFactor>1.15</GlobalLearningFactor>
         </value>
       </li>
       <!-- Industriousness -->
